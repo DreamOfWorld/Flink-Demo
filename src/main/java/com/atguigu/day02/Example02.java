@@ -1,5 +1,8 @@
 package com.atguigu.day02;
 
+
+import com.atguigu.utils.ClickSource;
+import com.atguigu.utils.Event;
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -17,6 +20,7 @@ public class Example02 {
         env
                 .addSource(new ClickSource())
                 .map(new MapFunction<Event, String>() {
+
                     @Override
                     public String map(Event event) throws Exception {
                         return event.key;

@@ -1,5 +1,6 @@
 package com.atguigu.day02;
 
+import com.atguigu.utils.ClickSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 /**

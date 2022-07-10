@@ -1,5 +1,7 @@
 package com.atguigu.day02;
 
+import com.atguigu.utils.ClickSource;
+import com.atguigu.utils.Event;
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Collector;

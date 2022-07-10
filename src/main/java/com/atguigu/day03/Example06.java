@@ -1,7 +1,7 @@
 package com.atguigu.day03;
 
-import com.atguigu.day02.ClickSource;
-import com.atguigu.day02.Event;
+import com.atguigu.utils.ClickSource;
+import com.atguigu.utils.Event;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.sink.RichSinkFunction;
@@ -31,8 +31,8 @@ public class Example06 {
 
     }
     public static class MyJDBC extends RichSinkFunction<Event> {
-        private  Connection connection;
-        private  PreparedStatement insertStatement;//插入语句
+        private Connection connection;
+        private PreparedStatement insertStatement;//插入语句
         private  PreparedStatement updateStatement;//更新语句
 
         @Override
